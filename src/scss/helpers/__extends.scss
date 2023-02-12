@@ -1,0 +1,19 @@
+%card__title {
+    font: {
+        weight: 600;
+        family: $secondary;
+        
+    }
+}
+%card__price {
+    font: {
+        weight: 500;
+        family: $numbers;
+        size: 1.3rem;
+    }
+    color: #666666;
+}
+%card__base{
+    border-radius: 3px;
+    overflow: hidden;
+}

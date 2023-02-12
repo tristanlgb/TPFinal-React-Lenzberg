@@ -1,0 +1,45 @@
+.field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    &__input{
+        position: relative;
+        font: {
+            size: 1em ;
+            family: $primary;
+        };
+        padding: 1em;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #c4c4c4;
+        color: black;
+        &::placeholder{
+            color: #c4c4c4;
+        }
+        &--is-invalid{
+            box-shadow: $shadowErrors;
+            &:focus{
+                box-shadow: $shadowErrors;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+            }
+        }
+        
+    }
+    &__label{
+        font: {
+            size: 1em;
+            family: $primary;
+        };
+    }
+    &__error{
+        color: #F24236;
+        font: {
+            size: .9em;
+            family: $secondary;
+        }
+    }
+}

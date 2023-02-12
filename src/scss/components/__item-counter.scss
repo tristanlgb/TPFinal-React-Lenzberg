@@ -1,0 +1,20 @@
+.ItemCounter{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    &--cart{
+
+    }
+    .counter__btn{
+        padding: .5em 1em;
+        &--cart{
+            padding: .2em .5em;
+        }
+    }
+    .counter__results{
+        font-family: $numbers;
+        &--cart{
+        
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.products__path{
+    width: 60vw;
+    margin: 1em auto 0;
+    font-family: $numbers;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 2rem;
+    width: 60vw;
+    margin: 1em auto 3em;
+    .product__card {
+        @extend %card__base;
+        border: 1px solid #CACACA;
+        &.card {
+            
+            .card__image {
+                width: 100%;
+                padding: 10px;
+                background-color: #e9e9e9;
+            }
+            .card__footer {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding: 1rem;
+                text-align: center;
+                .card__title {
+                    @extend %card__title;
+                    color: #5C3551;
+                    size: 1.5rem;
+                    
+                }
+                .card__price {
+                    @extend %card__price;
+                }
+            }
+        }
+    }
+}
+.detail__card {
+    @extend %card__base;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    display: flex;
+    width: 1250px;
+    height: 700px;
+    border-top: 1px solid #CACACA;
+    margin: 2rem auto;
+    transform: scale(0);
+    animation: scale 0.3s ease forwards;
+
+    &.card {
+        .card__image{
+            width: 50% ;
+            display: grid;
+            place-items: center;
+            .image{
+                width: 80%;
+                height: auto;
+            }
+        }
+        .card__body {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            padding: 0 2rem 4.5rem;
+            gap: 1.5rem;
+
+            .card__header{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                .card__title {
+                    @extend %card__title;
+                    font-size: 1.9rem;  
+                }
+                .card__price {
+                    @extend %card__price;
+                    font-size: 32px;
+                }
+            }
+            .card__description {
+                width: 60%;
+                font: {
+                    family: $secondary;
+                    size: 1.2rem;
+                }
+            }
+            .card__button{
+                justify-self: flex-end;
+                background: #5C3551;
+                border: none;
+                color: white;
+                padding: 20px 37px;
+                cursor: pointer;
+                font : {
+                    family:$secondary;
+                    weight: 600;
+                    size: 1rem;
+                }
+            }
+            
+        }
+        
+    }
+    @keyframes scale {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+}
+
+.cart__card{
+    &.card{
+        position: relative;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        .card__desc{
+            display: flex;
+            flex-direction: column;
+            gap: .2em;
+            .card__title{
+                font: {
+                    size: 14px
+                };
+            }
+            .card__category{
+                color: #666;
+                text-transform: capitalize;
+                font: {
+                    size: 12px
+                };
+            }
+        }
+        .card__image{
+            .image{
+                width: 75px;
+            }
+        }
+        .card__price{
+            .price{
+                font: {
+                    weight: bold;
+                    family: $numbers;
+                };
+            }
+        }
+        .card__actions{
+            position: absolute;
+            right: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .delete{
+                height: 1.5em;
+                cursor: pointer;
+            }
+        }
+    }
+}

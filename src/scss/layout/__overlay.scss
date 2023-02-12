@@ -1,0 +1,14 @@
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 600;
+    background-color: rgb(0,0,0,0.2);
+    &.hidden {
+        background: none;
+        width: 0;
+        height: 0;
+    }
+}

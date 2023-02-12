@@ -1,0 +1,11 @@
+.divider__container{
+    .divider{
+       width: 100%;
+        background-color: #e4eaee;
+        height: 1px; 
+    }
+    
+    &--cart{
+        padding: 1em 0;
+    }
+}

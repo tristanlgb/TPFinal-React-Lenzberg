@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+    &__group{
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    &__submit {
+        background: #5c3551;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        padding: 20px 37px;
+        position: relative;
+        cursor: pointer;
+        font : {
+            family: $secondary;
+            weight: 600;
+            size: 1.2em;
+        }
+    }
+}
