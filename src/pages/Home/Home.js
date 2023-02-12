@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import nike_hoodie from "../../nike_hoodie.png";
+import bulbasaur from "../../bulbasaur.png";
 import Header from "../../components/Header/Header";
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home">
         <h8> Mi Poketiendita</h8>
 
-        <img src={nike_hoodie} alt="nike hoodie" className="home__image" />
+        <img src={bulbasaur} alt="bulbasaur" className="home__image" />
       </div>
     </>
   );
