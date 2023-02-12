@@ -21,7 +21,7 @@ const Checkout = () => {
   };
 
   const mainLogo =
-    "https://res.cloudinary.com/dtpfo51rx/image/upload/v1669562382/swoosh/logos/logo_oqhbhu.png";
+    "https://c.wallhere.com/photos/c2/76/Pikachu_Pok_mon_anime_yellow_pokemon_unlimited-358681.jpg!d";
 
   if (items.length === 0) {
     navigateModal
