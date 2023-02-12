@@ -26,8 +26,8 @@ const Checkout = () => {
   if (items.length === 0) {
     navigateModal
       .fire({
-        title: <strong>Sorry, there are no products</strong>,
-        html: <h5>Back to store</h5>,
+      title: <strong>No hay productos en tu carrito 🛑</strong>,
+        html: <h5>Volver a la tiendita 🤗</h5>,
         confirmButtonText: "Ok",
         icon: "warning",
       })
